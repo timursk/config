@@ -22,7 +22,7 @@ module.exports = {
   mode,
   target,
   plugins, 
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -61,7 +61,7 @@ module.exports = {
       },
 
       {
-        test: /\.js$/,
+        test: /\.jsx?$/, 
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -71,6 +71,7 @@ module.exports = {
           },
         },
       },
+      
     ],
   }
 }
