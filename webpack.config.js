@@ -32,7 +32,9 @@ module.exports = {
   devServer: {
     hot: true,
   },
-
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
 
   module: {
   	rules: [
