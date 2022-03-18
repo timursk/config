@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --hot -d",
+    "start": "webpack-dev-server --open --hot --env mode=dev",
+    "build": "webpack",
     "build-dev": "webpack -d",
     "build-prod": "webpack -p --env.NODE_ENV=production",
     "clean": "rd /s /q dist",
